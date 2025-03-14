@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Warna Utama */
+:root {
+    --primary-blue: #0057a3;
+    --dark-blue: #002f5f;
+    --gold: #d4af37;
+    --white: #ffffff;
+    --background: #f7f7f7;
+}
+
+/* Body */
+body {
+    background-color: var(--background);
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-blue);
+    padding: 20px;
+    color: var(--white);
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    font-size: 14px;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--dark-blue);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--gold);
+}
+
+/* Layout */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: var(--gold);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--dark-blue);
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Menghilangkan bullet list */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 5px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: var(--primary-blue);
+}
+
+/* Main */
+main {
+    width: 50%;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Biodata */
+.biodata-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-blue);
+}
+
+.biodata-container h2 {
+    font-size: 22px;
+    color: var(--dark-blue);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-blue);
+    padding: 20px;
+    color: var(--white);
+}

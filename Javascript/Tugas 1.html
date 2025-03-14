@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h3 {
+            margin-top: 20px;
+        }
+        input {
+            margin: 5px;
+        }
+        button {
+            margin: 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Menghitung Luas Bangun Datar</h2>
+    
+    <div class="container">
+        <h3>Persegi Panjang</h3>
+        <label>Panjang: <input type="number" id="panjang"></label><br>
+        <label>Lebar: <input type="number" id="lebar"></label><br>
+        <button onclick="hitungPersegiPanjang()">Hitung Luas</button>
+        <p id="hasilPersegiPanjang"></p>
+    </div>
+
+    <div class="container">
+        <h3>Bujur Sangkar</h3>
+        <label>Sisi: <input type="number" id="sisi"></label><br>
+        <button onclick="hitungBujurSangkar()">Hitung Luas</button>
+        <p id="hasilBujurSangkar"></p>
+    </div>
+
+    <div class="container">
+        <h3>Segitiga</h3>
+        <label>Alas: <input type="number" id="alas"></label><br>
+        <label>Tinggi: <input type="number" id="tinggi"></label><br>
+        <button onclick="hitungSegitiga()">Hitung Luas</button>
+        <p id="hasilSegitiga"></p>
+    </div>
+
+    <script>
+        function luasPersegiPanjang(panjang, lebar) {
+            return panjang * lebar;
+        }
+
+        function luasBujurSangkar(sisi) {
+            return sisi * sisi;
+        }
+
+        function luasSegitiga(alas, tinggi) {
+            return 0.5 * alas * tinggi;
+        }
+
+        function hitungPersegiPanjang() {
+            let panjang = parseFloat(document.getElementById('panjang').value);
+            let lebar = parseFloat(document.getElementById('lebar').value);
+            document.getElementById('hasilPersegiPanjang').innerText = "Luas: " + luasPersegiPanjang(panjang, lebar);
+        }
+
+        function hitungBujurSangkar() {
+            let sisi = parseFloat(document.getElementById('sisi').value);
+            document.getElementById('hasilBujurSangkar').innerText = "Luas: " + luasBujurSangkar(sisi);
+        }
+
+        function hitungSegitiga() {
+            let alas = parseFloat(document.getElementById('alas').value);
+            let tinggi = parseFloat(document.getElementById('tinggi').value);
+            document.getElementById('hasilSegitiga').innerText = "Luas: " + luasSegitiga(alas, tinggi);
+        }
+    </script>
+</body>
+</html>

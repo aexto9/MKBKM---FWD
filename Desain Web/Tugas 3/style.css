@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+/* Styling untuk header */
+.header {
+    background-color: #017db6;
+    color: rgb(255, 216, 58);
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling untuk navigasi menu */
+.navbar {
+    background-color: #444;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk sidebar kiri dan kanan */
+.sidebar {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.sidebar fieldset {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar legend {
+    font-weight: bold;
+    color: #333;
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li {
+    background-color: #008cba;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.sidebar ul li:hover {
+    background-color: #005f73;
+    transform: scale(1.05);
+}
+
+.sidebar ul li a {
+    color: white;
+    display: block;
+}
+
+/* Styling untuk footer */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}

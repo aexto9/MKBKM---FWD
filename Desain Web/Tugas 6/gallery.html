@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        aside ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        footer a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Carousel -->
+    <header class="container-fluid p-0">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="banner/1(1).png" class="d-block w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="banner/2(1).png" class="d-block w-100" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="banner/3(1).png" class="d-block w-100" alt="Banner 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" class="img-fluid" style="height: 40px;"> BECAME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="study.html">MyStudy</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="datatables.html">Datatable</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Sidebar Content -->
+            <aside class="col-md-3 mb-3">
+                <h5>External Links</h5>
+                <ul>
+                    <li><a href="https://nfacademy.id" target="_blank">NF Academy</a></li>
+                    <li><a href="https://nurulfikri.ac.id" target="_blank">Nurul Fikri</a></li>
+                    <li><a href="https://www.instagram.com/sttnf_official/" target="_blank">Instagram Nurul Fikri</a></li>
+                    <li><a href="https://www.instagram.com/nfacademy_id/" target="_blank">Instagram NF Academy</a></li>
+                    <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-md-9">
+                <h2 class="text-center">Gallery</h2>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <a href="https://www.instagram.com/mmbrok.__" target="_blank">
+                            <img src="img/IMG_2574.JPG" class="img-fluid rounded shadow" alt="Gallery Image 1">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.instagram.com/mmbrok.__" target="_blank">
+                            <img src="img/IMG_2575.JPG" class="img-fluid rounded shadow" alt="Gallery Image 2">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.instagram.com/mmbrok.__" target="_blank">
+                            <img src="img/IMG_2578.JPG" class="img-fluid rounded shadow" alt="Gallery Image 3">
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>Created by abhe &copy; 2025</p>
+        <div>
+            <a href="#" class="text-white me-2">Facebook</a>
+            <a href="#" class="text-white me-2">Twitter</a>
+            <a href="https://www.instagram.com/mmbrok.__" class="text-white" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
