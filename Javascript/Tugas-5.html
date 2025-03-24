@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tugas Penjualan Produk</h1>
+
+    <script>
+        // **Data Produk**
+        let daftarProduk = [
+            { id: 1, nama: "Laptop", harga: 12000000, stok: 10 },
+            { id: 2, nama: "Smartphone", harga: 5000000, stok: 15 },
+            { id: 3, nama: "Tablet", harga: 7000000, stok: 8 },
+            { id: 4, nama: "Smartwatch", harga: 3000000, stok: 12 },
+            { id: 5, nama: "Headphone", harga: 1500000, stok: 20 },
+        ];
+
+        // **Menampilkan Produk dengan Destructuring**
+        function getProduct() {
+            console.log("Daftar Produk Tersedia:");
+            daftarProduk.forEach(({ id, nama, harga, stok }) => {
+                console.log(
+                    `ID: ${id}, Nama: ${nama}, Harga: ${harga}, Stok: ${stok}`
+                );
+            });
+        }
+
+        // **Menambahkan Produk dengan Spread Operator**
+        function addProduct(id, nama, harga, stok) {
+            daftarProduk = [...daftarProduk, { id, nama, harga, stok }];
+            console.log(
+                `Produk baru berhasil ditambahkan: ID: ${id}, Nama: ${nama}, Harga: ${harga}, Stok: ${stok}`
+            );
+        }
+
+        // **Menghapus Produk dengan Filter dan Rest Parameter**
+        function deleteProduct(...id) {
+            daftarProduk = daftarProduk.filter((produk) => !id.includes(produk.id));
+            console.log(`Produk dengan ID ${id.join(", ")} telah dihapus.`);
+        }
+
+        // **Event Listener**
+        const eventHandler = {
+            tambah: (id, nama, harga, stok) => addProduct(id, nama, harga, stok),
+            hapus: (id) => deleteProduct(id),
+            tampil: () => getProduct(),
+        };
+
+        // **Eksekusi Kode**
+        eventHandler.tampil(); // Menampilkan daftar awal
+        eventHandler.tambah(6, "Monitor", 2500000, 5); // Menambah produk baru
+        eventHandler.tampil();
+        eventHandler.hapus(2); // Menghapus produk dengan ID 2
+        eventHandler.tampil();
+    </script>
+</body>
+
+</html>
